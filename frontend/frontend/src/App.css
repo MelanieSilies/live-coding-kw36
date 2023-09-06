@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: mintcream;
+}
+
+header {
+  color: rgba(85, 107, 47, 0.626)
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 50px;
+  background-color: mintcream;
+  height: 100%;
+}
+
+.dept {
+  display: block;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  text-align: left;
+}
+
+.empl {
+  display: block;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  text-align: left;
+}
+
+button {
+  padding: 20px;
+  border: none;
+  background: darkolivegreen;
+  color: white;
+}
+
+ul {
+  padding: 5px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+ul.employee-list li:nth-child(even) {
+  background-color: rgba(85, 107, 47, 0.626);
+  color:white
+}
+

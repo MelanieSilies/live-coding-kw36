@@ -8,6 +8,7 @@ die connect_db.js imortieren
 */
 import "./lib/connect_db.js";
 import dotenv from "dotenv";
+import cors from 'cors';
 dotenv.config();
 /* 
 Alternativ können wir dotenv als Einzeiler importieren: 
@@ -21,6 +22,8 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
+app.use(cors());
+
 
 app.use("/api", departmentRouter);
 app.use("/api", employeeRouter);
